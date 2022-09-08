@@ -1,0 +1,50 @@
+
+.HUD-menu-r6
+{
+  display: none;
+  animation: FadeIn 1.5s;
+
+}
+
+
+.searchOperators
+{
+  display: none;
+  animation: slidToUp 1s;
+  
+}
+
+.text-block
+{
+  animation: slideToLeft 1s;
+}
+
+
+
+
+@keyframes FadeIn
+{
+  0%{opacity: 0; visibility: hidden;}
+  100%{opacity: 1; visibility: visible;}
+}
+
+@keyframes slidToUp
+{
+  from
+  {
+    margin-top: 100%;
+    height: 300%;
+  }
+  to
+  {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+@keyframes slideToLeft
+{
+  0%{ margin-left:100%; width: 100%;}
+  100%{margin-left: 0%; width: 100%;}
+  
+}

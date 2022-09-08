@@ -1,0 +1,206 @@
+.HUD
+{
+  
+  /* on fixe le menu en haut */
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	
+	margin: 0;
+	/* on centre les liens */
+  text-align: left;
+  z-index: 99;
+
+}
+
+.bodyAsh
+{
+  background: url("/img/Rainbow6S/Backgrounds/R6-background-ash.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+
+}
+
+.bodyThermite
+{
+  background: url("/img/Rainbow6S/Backgrounds/R6-background-thermite.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+
+}
+
+
+.text-block
+{
+  padding-top: 15em;
+}
+
+.presentation
+{
+  display: inline-flex;
+  padding-left: 20em;
+  
+  
+}
+
+#logo{width: 80px; height: 80px;}
+
+#name
+{
+  color: #FFF;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#faction-flag{padding-left: 15px;}
+
+#sigle{color: #FFF;  vertical-align: middle; padding-left: 5px; font-size: 20px; }
+#camp-logo{width: 50px; height: 40px;}
+
+#side
+{
+  color: #FFF;  
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+#role{color: #FFF;  vertical-align: middle; padding-left: 5px; font-size: 20px; font-weight: bold;}
+#role-line{width: 100%; height:2px; margin-left: 5px; margin-bottom: 2px; margin-top: 0px; opacity: 0.6; color:white;background-color:white;}
+#role-list{color: #FFF;  vertical-align: middle; padding-left: 6px; font-size: 14px; font-weight: bold; font-style: italic;}
+
+#protection
+{
+  color: #FFF;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+#vitesse
+{
+  color: #FFF;  
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+#difficulte
+{
+  color: #FFF;  
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+.unchecked
+{
+  color: black;
+  padding-top: 10px;
+  margin-left: 5px;
+  margin-right: 15px;
+  scale: 1.2;
+}
+
+.checked 
+{
+  color: white;
+  padding-top: 10px;
+  margin-left: 5px;
+  margin-right: 15px;
+  scale: 1.6;
+}
+
+
+#presentation-text
+{
+  
+  padding-left: 20em;
+  padding-top: 2em;
+}
+
+#presentation-text h3
+{
+  
+  font-weight: bold;
+}
+
+#presentation-text iframe
+{
+  float: left;
+}
+
+#presentation-text p
+{
+  padding-left: 30em;
+  width: 65%;
+  font-size: 20px;
+}
+
+
+
+
+.biographie{color: #FFF; padding-top: 10em;}
+
+.row-container
+{
+  
+  display: inline-flex;
+  float: left;
+  background-color: rgba(34, 34, 34, 0.5);
+  margin-left: 17em;
+  font-weight: bold;
+  
+
+
+}
+#row-info
+{
+  font-size: 25px;
+}
+.row1
+{
+  padding-left: 5px;
+  text-align: left;
+}
+
+.row2
+{
+  padding-left: 20em;
+  text-align: left;
+}
+
+.row3
+{
+  padding-left: 15em;
+  padding-right: 5px;
+  text-align: left;
+}
+
+#biographie-description
+{ 
+  text-align: left;
+  font-size: 20px;
+  width: 80%;
+  padding-top: 6em;
+  padding-left: 15em;
+}
+
+#attaquant
+{ 
+  text-align: left;
+  padding-left: 18.5em;
+  
+}
+#attaquant h1
+{ 
+  text-align: center;
+  padding-right: 10em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+
