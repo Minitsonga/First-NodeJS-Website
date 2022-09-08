@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/animation_Rainbow.css">
+        <link rel="stylesheet" href="/css/animation_loader.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <div class="HUD-menu-r6" id="menu-page-r6">
+
+          <div class="topnav" id="myTopnav">
+            <a href="/home" class="active">InfoLab</a>
+            <a href="/home/news">News</a>
+            <a href="/home/contact">Contact</a>
+            <a href="/home/about">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <h5 class="dropdown-header">FPS Games</h5>
+                <a href="/home/R6">Rainbow Six</a>
+                <h5 class="dropdown-header">Cars Games</h5>
+                <a href="#Rocket">Rocket League</a>
+                <h5 class="dropdown-header">RPG Games</h5>
+                <a href="#Autre">More...</a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+            <div class="button-theme">
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+            </div>
+
+          </div> 
+
+          <div class="logosRainbow">
+            <img src="/img/Rainbow6S/R6-6-logo.png" style="width:50px;height:50px;">
+            <img src="/img/Rainbow6S/R6-logo.png" class="R6logo">
+          </div>
+
+        </div>
+       
+
+    </head>
+
+    <body onload="Loading()" class="bodyRainbow">
+
+    
+      <div class="loader loader-circles" id="loader"></div> 
+      
+
+      <div class="searchOperators" id="operators">
+        
+        <input type="text" id="mySearch" onkeyup="Suggestion()" placeholder="Search your character..." title="Write the name of the Operators you want">
+
+        <ul id="myMenu">
+          <li><a href="/home/R6/Operators/<%= characterR6[0].name%>" ><img src="<%= characterR6[0].badge%>" style="width:60px;height:60px;"> <%=characterR6[0].name%> </a></li>
+          <li><a href="/home/R6/Operators/<%= characterR6[1].name%>"><img src="<%= characterR6[1].badge%>" style="width:60px;height:60px;"> <%= characterR6[1].name%> </a></li>
+          <li><a href="/home/R6/Operators/<%= characterR6[2].name%>"><img src="<%= characterR6[2].badge%>" style="width:60px;height:60px;"> <%= characterR6[2].name%> </a></li>
+          <li><a href="/home/R6/Operators/<%= characterR6[3].name%>"><img src="<%= characterR6[3].badge%>" style="width:60px;height:60px;"> <%= characterR6[3].name%> </a></li>
+          <li><a href="/home/R6/Operators/<%= characterR6[4].name%>"><img src="<%= characterR6[4].badge%>" style="width:60px;height:60px;"> <%= characterR6[4].name%> </a></li>
+          <li><a href="/home/R6/Operators/<%= characterR6[5].name%>"><img src="<%= characterR6[5].badge%>" style="width:60px;height:60px;"> <%= characterR6[5].name%> </a></li>
+
+          
+
+        </ul> 
+
+        
+
+      </div>
+      
+      
+
+        <script> 
+            const lightButton = document.getElementsByClassName('btn btn-light')[0];
+            const darkButton = document.getElementsByClassName('btn btn-dark')[0];
+            
+            lightButton.addEventListener( 'click', (event) =>
+            {
+            event.preventDefault();
+            document.body.classList.remove( 'color-scheme-dark' );
+            document.body.classList.add( 'color-scheme-light' );
+            } );
+            
+            darkButton.addEventListener( 'click', (event) => 
+            {
+            event.preventDefault();
+            document.body.classList.remove( 'color-scheme-light' );
+            document.body.classList.add( 'color-scheme-dark' );
+            } );
+
+        </script>
+
+        <script>
+          
+          function Suggestion() 
+          {
+            // Declare variables
+            let input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+          
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) 
+            {
+              a = li[i].getElementsByTagName("a")[0];
+              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) 
+              {
+                li[i].style.display = "";
+              } 
+              else 
+              {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+
+        <script src="/js/RainbowSixJS.js"></script>
+s
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        
+        
+    </body>
+    </html>
+

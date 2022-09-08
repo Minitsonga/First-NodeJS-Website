@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/animation_Rainbow.css">
+        <link rel="stylesheet" href="/css/animation_loader.css">
+        <link rel="stylesheet" href="/css/rainbow_operators_pages.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <div class="HUD">
+
+          <div class="topnav" id="myTopnav">
+            <a href="/home" class="active">InfoLab</a>
+            <a href="/home/news">News</a>
+            <a href="/home/contact">Contact</a>
+            <a href="/home/about">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <h5 class="dropdown-header">FPS Games</h5>
+                <a href="/home/R6">Rainbow Six</a>
+                <h5 class="dropdown-header">Cars Games</h5>
+                <a href="#Rocket">Rocket League</a>
+                <h5 class="dropdown-header">RPG Games</h5>
+                <a href="#Autre">More...</a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+            <div class="button-theme">
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+            </div>
+
+          </div> 
+
+          <div class="logosRainbow">
+            <img src="/img/Rainbow6S/R6-6-logo.png" style="width:50px;height:50px;">
+            <img src="/img/Rainbow6S/R6-logo.png" class="R6logo">
+          </div>
+
+        </div>
+     
+
+    </head>
+  <body class="bodyAsh">
+
+    <div class="text-block">
+
+      <div class="presentation">
+      
+        <div><!-- Section presentation agent -->
+          <img id="logo" src="<%=operator.badge%>">
+          <span id="name"><%= operator.name%></span>
+          <img id="faction-flag" src="<%=operator.faction.flag%>">
+          <span id="sigle"><%=operator.faction.sigle%></span>
+          
+          <br>
+
+          <span id="side">Side</span>
+          <img id="camp-logo" src="<%=operator.camp.logo%>">
+          <span id="side"><%=operator.camp.side%></span>
+          
+          <br>
+
+          <span id="role">Rôles</span>      
+          <hr id="role-line">
+          <span id="role-list"><%=operator.role%></span>
+
+          
+
+          <div id="stats" class="row" style="padding-top: 10px;">
+
+            <div class="col-md-3" style="width: 12em; ">
+              <span id="protection">PROTECTION</span>
+              <hr id="stats-line" style="width: 100%; height:2px; margin-bottom: 2px; margin-top: 0px; opacity: 0.6; color:white;background-color:white;">
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unchecked"></span>
+            </div>
+    
+            <div class="col-md-3" style="width: 12em; margin-left: 10px;">
+              <span id="vitesse" >VITESSE</span>
+              <hr id="stats-line"style="width: 100%; height:2px; margin-bottom: 2px; margin-top: 0px; opacity: 0.6; color:white;background-color:white;">
+            
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+            </div>
+    
+            <div class="col-md-3" style="width: 12em; margin-left: 10px;">
+              <span id="difficulte">DIFFICULTÉ</span>
+              <hr id="stats-line" style="width: 100%; height:2px; margin-bottom: 2px; margin-top: 0px; opacity: 0.6; color:white;background-color:white;">
+    
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              
+            </div>
+
+            
+
+          </div>
+         
+          
+        </div>
+
+      
+      </div>
+      
+      <div id="presentation-text">
+
+        <h3>PRÉSENTATION</h3>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3_RcC0dISnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><%=operator.presentation%></p>
+        
+      </div>
+
+
+      <div class="biographie"><!-- Section Biographie agent -->
+
+        <h1 style="text-align: center; padding-bottom: 1em; padding-right: 4.8em;">BIOGRAPHIE</h1>
+
+        <section class="row-container">
+          <div class="row1"><span> Nom de naissance </span><div id="row-info"><%=operator.biographie["nom_de_naissance"]%></div> </div>
+          <div class="row2"><span> Date de naissance </span><div id="row-info"><%=operator.biographie["date_de_naissance"]%></div></div>
+          <div class="row3"><span> Lieu de naissance </span><div id="row-info"><%=operator.biographie["lieu_de_naissance"]%></div></div>
+        </section>
+
+        <div id="biographie-description">
+          <h4>ÉDUCATION</h4>
+
+          "Il est impossible de le comprendre un conflit tant qu'on n'a pas vécu la situation dans les deux camps".<br><br>
+          
+          Cohen grandit en Israël, élevée par une mère juive, activiste politique et professeur, et un père palestinien, professeur spécialisé dans les études du Moyen-Orient. Elle excelle en mathématiques et en physique, et elle décroche un diplôme en ingénierie structurelle avant de passer quelques semestres à l'Université de Boston.<br><br>
+          
+          Cohen s'engage ensuite dans l'armée de défense d'Israël (IDF). Elle intègre l'unité Shaldag, le fameux groupe d'élite de l'armée de l'air, après une formation rigoureuse de vingt-deux mois, et elle y sert pendant cinq ans. Elle s'avère être un atout indéniable durant l'opération Orchard, grâce à son expérience des opérations terrestres et aéroportées, et à ses capacités de reconnaissance et de navigation, quelles que soient les conditions. Elle se rend aux États-Unis pour intégrer l'unité SWAT du FBI, où elle met à profit son expertise en ingénierie et ses connaissances en résistance structurelle pour développer de l'équipement et des tactiques de démolition avancés. En plus de l'hébreu, Cohen parle couramment arabe, anglais, français et grec.<br><br>
+          
+          <h4>RAPPORT PSYCHOLOGIQUE</h4>
+          
+          J'ai rencontré la spécialiste Eliza "Ash" Cohen à plusieurs reprises mais rien n'y fait : elle continue à me voir comme un officier en charge du commandement. Elle m'a posé tellement de questions que j'ai parfois pensé qu'elle cherchait à m'analyser.[…]<br><br>
+          
+          Cohen n'éprouve aucun intérêt à aborder son enfance. Elle a du ressentiment envers une mère incroyablement exigeante, mais aucune séquelle sérieuse. Son service militaire lui a permis de s'éloigner des tensions familiales et s'est révélé être en totale adéquation avec sa personnalité, très ordonnée et concentrée. Cohen m'a expliqué qu'elle apprécie particulièrement les situations dangereuses, car elles sont plus gratifiantes, mais elle ne m'a pas indiqué à quel point elle consentait à se mettre en danger.<br><br>
+          
+          Son identité est intimement liée à sa formation militaire et aux opérations auxquelles elle a participé, il s'avère donc complexe de retirer quoi que ce soit de personnel de cet enchevêtrement. Cohen est une personne prudente et elle n'a que très peu d'amis dans l'équipe. Son lien avec le spécialiste Miles "Castle" Campbell est d'autant plus important pour elle, et par extension, pour le groupe. C'est un duo qui fonctionne plutôt bien. Campbell est quelqu'un d'aimable et c'est ce qui permet à Cohen de sortir de sa zone de confort sans se sentir jugée ou sans éprouver de gêne. […]<br><br>
+          
+          Cohen utilise ce que pensent les autres pour se décrire : elle m'a indiqué que les spécialistes Dominic "Bandit" Brunsmeier et James "Smoke" Porter la trouvent un peu trop sérieuse, tandis que les autres pensent qu'elle est "intense" et qu'elle aime avoir raison. Je lui ai donc demandé si elle trouve ces descriptions exactes. Elle m'a répondu qu'elle se préoccupe simplement de savoir si les autres spécialistes la respectent. Je suis persuadé que c'est le cas.[…]<br><br>
+          
+          Pendant les opérations, Cohen a un comportement exemplaire : elle réfléchit vite et son style hargneux lui donne souvent un avantage indéniable. Mais j'ai remarqué qu'elle est très différente au cours des débriefs. Le stress résiduel lié aux combats fait qu'elle se focalise sur chacune de ses erreurs, qu'elles soient avérées ou non. Pour quelqu'un d'aussi compétent, il est tout à fait normal de vouloir évaluer ses performances, mais cela affecte également le groupe. Il est important qu'elle comprenne qu'il faut aborder les événements via le prisme de l'équipe et qu'elle ne doit pas assumer la critique seule. Comme tous les autres agents, Cohen sait pertinemment qu'elle rencontrera des situations pour lesquelles elle n'est pas préparée, et pourtant, elle laisse le stress de l'inconnu la consumer. Il faut absolument régler ce problème. <br><br>
+        
+        </div>
+
+        <!--<div id="attaquant">
+          <h1>Autres attaquants</h1>
+          
+
+        </div>-->
+
+          
+      
+
+      </div>
+
+    </div>
+  
+
+
+  
+    <script> 
+      const lightButton = document.getElementsByClassName('btn btn-light')[0];
+      const darkButton = document.getElementsByClassName('btn btn-dark')[0];
+      
+      lightButton.addEventListener( 'click', (event) =>
+      {
+        event.preventDefault();
+        document.body.classList.remove( 'color-scheme-dark' );
+        document.body.classList.add( 'color-scheme-light' );
+      } );
+      
+      darkButton.addEventListener( 'click', (event) => 
+      {
+        event.preventDefault();
+        document.body.classList.remove( 'color-scheme-light' );
+        document.body.classList.add( 'color-scheme-dark' );
+      } );
+
+    </script>
+  </body>
+</html>

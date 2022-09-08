@@ -1,0 +1,110 @@
+[ 
+
+    {
+        "name" : "Ash",
+
+        "faction":
+        {
+            "flag": "/img/Rainbow6S/Operators_faction_flag/R6-operators-faction-flag_usa.png",
+            "sigle": "SWAT"
+        },
+        
+
+        "camp":
+        {
+            "logo": "/img/Rainbow6S/R6-Attacker-logo.png",
+            "side": "Assaillant"
+            
+        },
+
+        "role": "Neutralisation, Contournement, Première ligne, Brèche",
+
+
+        "presentation": "Ash est un agent rapide de première ligne, capable de s'infiltrer discrètement, de contourner l'ennemi ainsi que de détourner l'attention des défenseurs en quelques secondes. Ash est capable de s'infiltrer discrètement et à distance grâce à son M120 CREM modifié et ses munitions d'infiltration.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-ash.png",
+
+        "biographie": 
+        {
+            "nom_de_naissance" : "Eliza Cohen",
+            "date_de_naissance" : "24 décembre (33 ans)",
+            "lieu_de_naissance": "Jérusalem, Israël"
+
+        }
+        
+
+    },
+
+    {
+        "name": "Thermite",
+
+        "faction":
+        {
+            "flag": "/img/Rainbow6S/Operators_faction_flag/R6-operators-faction-flag_gb.png",
+            "sigle": "SWAT"
+        },
+
+
+        "camp":
+        {
+            "logo": "/img/Rainbow6S/R6-Attacker-logo.png",
+            "side": "Assaillant"
+
+        },
+
+        "role": "Arrière-garde, Brèche lourde",
+
+
+        "presentation": "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-thermite.png",
+
+        "biographie": 
+        {
+            "nom_de_naissance" : "Jordan Trace",
+            "date_de_naissance" : "14 mars (35 ans)",
+            "lieu_de_naissance": "Plano, Texas"
+        }
+
+    },
+
+    {
+        "name": "Smoke",
+
+        "presentation" : "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-smoke.png"
+
+    },
+
+
+    {
+        "name": "Bandit",
+
+        "presentation" : "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-bandit.png"
+
+    },
+    
+    {
+        "name": "Sledge",
+
+        "presentation" : "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-sledge.png"
+
+
+    },
+
+    {
+        "name": "Thatcher",
+
+        "presentation" : "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+
+        "badge": "/img/Rainbow6S/Operators_badges/R6-operators-badge-thatcher.png"
+
+    }
+
+]
+

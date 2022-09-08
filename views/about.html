@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <div class="topnav" id="myTopnav">
+          <a href="/home" class="active">InfoLab</a>
+          <a href="/home/news">News</a>
+          <a href="/home/contact">Contact</a>
+          <a href="/home/about">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <h5 class="dropdown-header">FPS Games</h5>
+              <a href="/home/R6">Rainbow Six</a>
+              <h5 class="dropdown-header">Cars Games</h5>
+              <a href="#Rocket">Rocket League</a>
+              <h5 class="dropdown-header">RPG Games</h5>
+              <a href="#Autre">More...</a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+          <div class="search-container">
+            <form action="/home/search">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+
+          <div class="button-theme">
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+          </div>
+
+
+        </div> 
+
+    </head>
+
+    <body>
+
+      <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/w3images/team1.jpg" alt="Moi" style="width:100%">
+            <div class="container">
+              <h2>Moi seulement moi</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <script> 
+            const lightButton = document.getElementsByClassName('btn btn-light')[0];
+            const darkButton = document.getElementsByClassName('btn btn-dark')[0];
+            
+            lightButton.addEventListener( 'click', (event) =>
+            {
+            event.preventDefault();
+            document.body.classList.remove( 'color-scheme-dark' );
+            document.body.classList.add( 'color-scheme-light' );
+            } );
+            
+            darkButton.addEventListener( 'click', (event) => 
+            {
+            event.preventDefault();
+            document.body.classList.remove( 'color-scheme-light' );
+            document.body.classList.add( 'color-scheme-dark' );
+            } );
+
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="/js/pooper.js></script>"></script>
+        
+    </body>
+    </html>
